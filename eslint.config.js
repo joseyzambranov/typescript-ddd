@@ -1,4 +1,4 @@
-import codelyTypescript from 'eslint-config-codely';
+import codelyTypescript from 'eslint-config-codely'; 
 
 module.exports = [//{
 	//extends: ['eslint-config-codely/typescript'],
