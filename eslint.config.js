@@ -1,8 +1,8 @@
 module.exports = {
-	extends: ['eslint-config-codely/typescript'],
-	rules: {
-		'no-console': 'warn'
-	},
+	//extends: ['eslint-config-codely/typescript'],
+	//rules: {
+	//	'no-console': 'warn'
+	//},
 	overrides: [
 		{
 			files: ['*.ts', '*.tsx'],
@@ -10,6 +10,7 @@ module.exports = {
 				project: ['./tsconfig.json']
 			},
 			rules: {
+                'no-console': 'warn',
 				'@typescript-eslint/no-floating-promises': 'warn'
 			}
 		}
