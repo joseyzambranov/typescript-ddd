@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 const common = [
 	'--require-module ts-node/register' // Load TypeScript module
 ];
@@ -9,6 +9,6 @@ const mooc_backend = [
 	'--require tests/apps/mooc/backend/features/step_definitions/*.steps.ts'
 ].join(' ');
 
-module.exports = {
+module.exports = { 
 	mooc_backend
 };
