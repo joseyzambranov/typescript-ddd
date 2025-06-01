@@ -1,4 +1,4 @@
-import codelyTypescript from 'eslint-config-codely'; 
+import eslintConfigCodely from 'eslint-config-codely'; 
 
 module.exports = [//{
 	//extends: ['eslint-config-codely/typescript'],
@@ -6,7 +6,7 @@ module.exports = [//{
 	//	'no-console': 'warn'
 	//},
 	//overrides: [
-    codelyTypescript,
+    ...eslintConfigCodely.ts,
 		{
 			files: ['*.ts', '*.tsx'],
 			parserOptions: {
