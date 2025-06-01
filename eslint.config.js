@@ -1,16 +1,22 @@
-import eslintConfigCodely from "eslint-config-codely";
+import eslintConfigCodely from 'eslint-config-codely'; 
 
-export default [
-  ...eslintConfigCodely.ts,
-  {
-    rules: {
-      'no-console': 'warn',
-      '@typescript-eslint/no-floating-promises': 'warn'
-    },
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.json']
-      }
-    }
-  }
-];
+export default [//{
+	//extends: ['eslint-config-codely/typescript'],
+	//rules: {
+	//	'no-console': 'warn'
+	//},
+	//overrides: [
+    ...eslintConfigCodely.ts,
+		{
+			files: ['*.ts', '*.tsx'],
+			parserOptions: {
+				project: ['./tsconfig.json']
+			},
+			rules: {
+                'no-console': 'warn',
+				'@typescript-eslint/no-floating-promises': 'warn'
+			}
+		}
+	//]
+//};
+]
